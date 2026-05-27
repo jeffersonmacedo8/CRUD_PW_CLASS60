@@ -1,0 +1,82 @@
+/* Reset básico */
+* {
+    margin: 0; /* Remove o espaço externo padrão */
+    padding: 0; /* Remove o espaço interno */
+    box-sizing: border-box; /* Sem isso, os elementos crescem mais do que deveriam. Faz com que largura e altura incluam o padding*/
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px; /* Espaço interno da página inteira. Evita que o conteúdo fique colado nas bordas.*/
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px; /* Espaço interno do header. Evita que o conteúdo fique colado nas bordas.*/
+    margin-bottom: 20px; /*Espaço embaixo do header*/
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+/* Menu */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav button {
+    padding: 10px;
+    margin: 5px;  /*Espaço entre botões*/
+    cursor: pointer;  /*Muda o cursor para mão. Isso ajuda a indicar que é clicável.*/
+}
+
+/* Conteúdo */
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+main button {
+    width: 30%;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Telas */ 
+/*Todos os elementos com essa classe ficam escondidos.*/
+.tela {
+    display: none;
+}
+
+/*O elemento que tiver essa classe fica visível.*/
+.ativa {
+    display: block;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Lista */
+ul {
+    list-style: none; /* Remove as bolinhas da lista */
+}
+
+li {
+    padding: 8px; /* Espaço interno de cada item da lista */
+    border-bottom: 1px solid #ccc; /* Linha fina para separar os itens */
+}

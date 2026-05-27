@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8"> <!-- Permite acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para funcionar bem em celulares -->
+
+    <title>Sistema de Cadastro</title>
+
+    <!-- Importando o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Sistema de Cadastro</h1>
+        <p>CRUD com LocalStorage</p>
+    </header>
+
+    <!-- Menu -->
+    <nav>
+        <!-- Botões chamando função JS -->
+        <button id="btnCadastro">Cadastrar</button>
+        <button id="btnLista">Visualizar</button>
+        <!-- Aqui não usamos onclick, porque quem vai escutar o clique é o JS -->
+    </nav>
+
+    <main>
+        <!-- TELA 1 - CADASTRO --> <!-- Essa tela começa ativa, por isso aparece primeiro -->
+        <section id="cadastro" class="tela ativa">
+            <h2>Novo Cadastro</h2>
+
+            <input type="text" id="nome" placeholder="Digite um nome">
+
+            <!-- Vamos implementar essa função em sala - CREATE -->
+            <button id="btnSalvar">Salvar</button>
+
+            <input type="number" id="buscarId" placeholder="Digite o ID">
+
+            <button id="btnBuscar">Buscar</button>
+        </section>
+
+        <!-- TELA 2 - LISTA -->
+        <!-- Vamos implementar essa função em sala - READ -->
+        <!-- Essa tela começa escondida. Tem id e class diferentes -->
+        <section id="lista" class="tela">
+            <h2>Cadastros Salvos</h2>
+
+            <ul id="lista-nomes"></ul>
+            <!-- Aqui vamos colocar os nomes cadastrados, usando JS para criar os itens da lista -->
+        </section>
+    </main>
+    <!-- Importando o JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
